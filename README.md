@@ -83,3 +83,5 @@ Execution: Load the test-mode kernel driver, then run the EXE as Administrator.
  ┃ ┗ 📜 xor.h                 # Compile-time string encryption templates
  ┗ 📜 main.cpp                # Entry point, initialization, and UI/monitoring thread
 ````
+👤 Author
+Developed with ❤️ by mx0p1
