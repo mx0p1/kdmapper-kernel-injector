@@ -13,7 +13,7 @@
 
 ---
 
-## ⚠️ Strict Warning & Disclaimer (تحذير وإخلاء مسؤولية صارم)
+## ⚠️ Strict Warning & Disclaimer 
 
 This software, manual mapping logic, and kernel driver communication interface are provided **strictly and exclusively** for educational, research, and self-improvement purposes in controlled environments.
 
