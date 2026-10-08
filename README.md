@@ -1,7 +1,7 @@
 #  DLL Injector & Mapper
 
 <p align="center">
-  <b>Hybrid User-Mode (Ring 3) & Kernel-Mode (Ring 0) DLL Injection and Manual Mapping Framework</b>
+  <b> User-Mode (Ring 3) & Kernel-Mode (Ring 0) DLL Injection and Manual Mapping </b>
 </p>
 
 <p align="center">
