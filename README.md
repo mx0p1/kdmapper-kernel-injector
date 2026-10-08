@@ -43,40 +43,25 @@ The project relies on a hybrid User-Mode and Kernel-Mode communication channel t
 +-----------------------------------------------------------------+
 
 `````
-🚀 Key Features & Capabilities
-Automatic Administrator Elevation: Enforces ForceAdmin privileges on startup.
+🚀 Key Features
 
-Advanced Manual Mapping: Custom PE parser, section allocation, base relocation handling, and Import Address Table (IAT) resolution without LoadLibrary.
+Manual Mapping: Custom PE parser, section allocation, and IAT resolution without LoadLibrary.
 
-Kernel-Level Communication: Secure IOCTL interface bridging User-Mode (Ring 3) and Kernel-Mode (Ring 0) for privileged memory operations.
+Kernel Communication: Secure Ring 3 to Ring 0 IOCTL interface.
 
-Evasion & Anti-Analysis: PE header erasure and memory discardable sections cleanup post-injection.
+Anti-Analysis: PE header erasure and compile-time XOR string obfuscation.
 
-Compile-Time String Obfuscation: Built-in XOR encryption macros to protect sensitive strings against static analysis tools (IDA Pro, Ghidra).
+Evasion: Dynamic multi-threaded process monitoring and window scrambling.
 
-Dynamic Multi-Threaded Obfuscation: Dynamic window title scrambling and process monitoring routines.
+🛠️ Setup & Build
 
+Requirements: Visual Studio (2019/2022) 
 
-🛠️ Prerequisites & Setup
-Development Environment: Microsoft Visual Studio (2019/2022 recommended) with Windows Driver Kit (WDK) installed.
+Configuration: Build solution in Release / x64 mode.
 
-Target Configuration: Compile the entire solution exclusively in Release / x64 mode. Debug builds might cause signature/structure mismatches.
+Payload: Place test DLL as test.dll in the output directory.
 
-Test Payload: Place your compiled safe testing DLL in the output directory and rename it to test.dll (or modify main.cpp path macros accordingly).
-
-Safe Target: Ensure a controlled safe application (e.g., notepad.exe) is running on a test machine or isolated VM.
-
-
-⚙️ Build & Execution Instructions
-Open the solution file (.sln) in Visual Studio.
-
-Set the solution configuration to Release and platform to x64.
-
-Build the solution (Build -> Build Solution).
-
-Load the signed/test-mode kernel driver safely onto your test environment.
-
-Run the generated executable strictly as Administrator.
+Execution: Load the test-mode kernel driver, then run the EXE as Administrator.
 
 
 📂 Project Structure & Code Organization
