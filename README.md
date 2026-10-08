@@ -1,4 +1,4 @@
-# Advanced DLL Injector & Mapper
+#  DLL Injector & Mapper
 
 <p align="center">
   <b>Hybrid User-Mode (Ring 3) & Kernel-Mode (Ring 0) DLL Injection and Manual Mapping Framework</b>
@@ -82,7 +82,7 @@ Run the generated executable strictly as Administrator.
 📂 Project Structure & Code Organization
 
 ```text
-📦 Advanced-DLL-Injector
+📦 Injector
  ┣ 📂 driver/
  ┃ ┣ 📜 driver.h / cpp        # Kernel communication interface and IOCTL handler
  ┃ ┣ 📜 map.h                 # PE sections mapping and relocation handlers
