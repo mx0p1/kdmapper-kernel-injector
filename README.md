@@ -28,19 +28,19 @@ This software, manual mapping logic, and kernel driver communication interface a
 The project relies on a hybrid User-Mode and Kernel-Mode communication channel to bypass standard API hooks and execute manual mapping safely.
 
 ```text
-+-----------------+        IOCTL / Ring 0        +------------------+
-|   Loader (EXE)  | ----------------------------> |   Kernel Driver  |
-| (Manual Mapper) |                               | (System Ring 0)  |
-+-----------------+                               +------------------+
+    +-----------------+        IOCTL / Ring 0         +------------------+
+    |   Loader (EXE)  | ----------------------------> |   Kernel Driver  |
+    | (Manual Mapper) |                               | (System Ring 0)  |
+    +-----------------+                               +------------------+
          |                                                 |
          | Maps Sections & Resolves Imports                | Writes Memory via MmCopy
          v                                                 v
-+-----------------------------------------------------------------+
-|                          Target Process                         |
-|   +---------------------------------------------------------+   |
-|   |                 Injected Payload (DLL)                  |   |
-|   +---------------------------------------------------------+   |
-+-----------------------------------------------------------------+
+    +-----------------------------------------------------------------+
+    |                          Target Process                         |
+    |   +---------------------------------------------------------+   |
+    |   |                 Injected Payload (DLL)                  |   |
+    |   +---------------------------------------------------------+   |
+    +-----------------------------------------------------------------+
 
 `````
 🚀 Key Features
