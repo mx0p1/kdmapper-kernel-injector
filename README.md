@@ -1,8 +1,9 @@
-===============================================
-                        ADVANCED DLL INJECTOR & MAPPER
-============================================
+=
+                        kdmapper kernel injector
+                        
 
-[!] STRICT WARNING & DISCLAIMER 
+[!] STRICT WARNING & DISCLAIMER
+
 This software, manual mapping logic, and kernel driver communication interface 
 are provided strictly and exclusively for educational, research, and self-improvement 
 purposes in controlled environments.
